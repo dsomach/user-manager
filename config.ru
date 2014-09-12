@@ -1,5 +1,10 @@
 # This file is used by Rack-based servers to start the application.
 
-require ::File.expand_path('../app/api/hi_api', __FILE__)
+require 'mongoid'
+Mongoid.load!("./config/mongoid.yml")
 
-run HiAPI
+#TODO application.rb with auto_load of directories
+require ::File.expand_path('../app/api/account_api', __FILE__)
+require ::File.expand_path('../app/models/user', __FILE__)
+
+run AccountAPI
