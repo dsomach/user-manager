@@ -7,6 +7,7 @@ DONE
 * set up Mongoid
 * create basic user model
 * add basic dummy user API calls (create, user count)
+* serve content from public directory
 
 TODO
 * add useful account API calls
